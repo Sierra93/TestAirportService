@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp2.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Folder Include="wwwroot\" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Autofac" Version="6.4.0" />
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
+        <PackageReference Include="Microsoft.AspNetCore.App" />
+        <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TestAirportService.Abstractions\TestAirportService.Abstractions.csproj" />
+      <ProjectReference Include="..\TestAirportService.Controllers\TestAirportService.Controllers.csproj" />
+      <ProjectReference Include="..\TestAirportService.Models\TestAirportService.Models.csproj" />
+      <ProjectReference Include="..\TestAirportService.Services\TestAirportService.Services.csproj" />
+    </ItemGroup>
+
+</Project>
